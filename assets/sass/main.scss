@@ -440,7 +440,7 @@
 	}
 
 	input[type="checkbox"],
-	input[type="radio"], {
+	input[type="radio"] {
 		@include vendor('appearance', 'none');
 		display: block;
 		float: left;
@@ -707,7 +707,6 @@
 
 		li {
 			padding: 0 0 0 (_size(element-margin) * 0.5);
-			vertical-align: middle;
 		}
 
 		&.special {
@@ -1196,7 +1195,7 @@
 			}
 
 			input[type="checkbox"],
-			input[type="radio"], {
+			input[type="radio"] {
 				& + label {
 					color: _palette($p, fg);
 
@@ -1447,7 +1446,6 @@
 			position: absolute;
 			right: 0;
 			top: 0;
-			vertical-align: middle;
 			width: 7em;
 		}
 

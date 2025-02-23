@@ -3568,20 +3568,22 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
+		-moz-flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-moz-justify-content: space-between;
+		-webkit-justify-content: space-between;
+		-ms-justify-content: space-between;
+		justify-content: space-between;
 		cursor: default;
 		height: 100vh;
 		min-height: 35em;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
+		align-items: center;
+		padding: 0 15%;
 	}
 
 		#banner h2 {
@@ -3600,7 +3602,47 @@ input, select, textarea {
 			position: relative;
 			z-index: 1;
 		}
-
+		#banner img {
+			width: 100%;
+			height: auto;
+			max-width: 40%;
+			border-radius: 50%;  /* Optional rounded corners for the image */
+			align-items: left;
+		}
+		#banner button {
+			background-color: #21b2a6;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-flex; /* Use inline-flex to make the buttons align properly */
+			justify-content: center; /* Centers text horizontally inside the button */
+			align-items: center; /* Centers text vertically inside the button */
+			font-size: 15px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 28px;
+			width: 100%; /* Makes buttons the same width */
+			max-width: 150px; /* Optional: limits the button width */
+		}
+		#banner button:hover {
+			background-color: #1a7a75   ;
+		}
+		#banner button:active {
+			background-color: #21b2a6;
+		}
+		#banner button:focus {
+			outline: 0;
+		}
+		#banner li {
+			display: inline;
+			padding: 0 1em;
+			list-style: none;
+			font-size: 30px;
+			float: left;
+			padding-left: 30%;
+		}
 			#banner h2:before, #banner h2:after {
 				-moz-transition: width 0.85s ease;
 				-webkit-transition: width 0.85s ease;
