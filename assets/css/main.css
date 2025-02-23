@@ -31,6 +31,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	-webkit-text-size-adjust: none;
+	background: #2e3842;
 }
 
 ol, ul {
@@ -51,9 +53,6 @@ table {
 	border-spacing: 0;
 }
 
-body {
-	-webkit-text-size-adjust: none;
-}
 
 mark {
 	background-color: transparent;
@@ -84,10 +83,6 @@ input, select, textarea {
 
 	*, *:before, *:after {
 		box-sizing: inherit;
-	}
-
-	body {
-		background: #2e3842;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -286,16 +281,7 @@ input, select, textarea {
 
 /* Row */
 
-	.row {
-		display: flex;
-		flex-wrap: wrap;
-		box-sizing: border-box;
-		align-items: stretch;
-	}
 
-		.row > * {
-			box-sizing: border-box;
-		}
 
 		.row.gtr-uniform > * > :last-child {
 			margin-bottom: 0;
@@ -476,14 +462,6 @@ input, select, textarea {
 					padding-top: 0.75em;
 				}
 
-		.row {
-			margin-top: 0;
-			margin-left: -1.5em;
-		}
-
-			.row > * {
-				padding: 0 0 0 1.5em;
-			}
 
 			.row.gtr-uniform {
 				margin-top: -1.5em;
@@ -529,12 +507,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 1680px) {
 
-			.row {
-				display: flex;
-				flex-wrap: wrap;
-				box-sizing: border-box;
-				align-items: stretch;
-			}
 
 				.row > * {
 					box-sizing: border-box;
@@ -719,23 +691,6 @@ input, select, textarea {
 							padding-top: 0.75em;
 						}
 
-				.row {
-					margin-top: 0;
-					margin-left: -1.5em;
-				}
-
-					.row > * {
-						padding: 0 0 0 1.5em;
-					}
-
-					.row.gtr-uniform {
-						margin-top: -1.5em;
-					}
-
-						.row.gtr-uniform > * {
-							padding-top: 1.5em;
-						}
-
 				.row.gtr-150 {
 					margin-top: 0;
 					margin-left: -2.25em;
@@ -774,12 +729,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 1280px) {
 
-			.row {
-				display: flex;
-				flex-wrap: wrap;
-				box-sizing: border-box;
-				align-items: stretch;
-			}
 
 				.row > * {
 					box-sizing: border-box;
@@ -964,22 +913,6 @@ input, select, textarea {
 							padding-top: 0.75em;
 						}
 
-				.row {
-					margin-top: 0;
-					margin-left: -1.5em;
-				}
-
-					.row > * {
-						padding: 0 0 0 1.5em;
-					}
-
-					.row.gtr-uniform {
-						margin-top: -1.5em;
-					}
-
-						.row.gtr-uniform > * {
-							padding-top: 1.5em;
-						}
 
 				.row.gtr-150 {
 					margin-top: 0;
@@ -1019,12 +952,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
-			.row {
-				display: flex;
-				flex-wrap: wrap;
-				box-sizing: border-box;
-				align-items: stretch;
-			}
 
 				.row > * {
 					box-sizing: border-box;
@@ -1209,22 +1136,6 @@ input, select, textarea {
 							padding-top: 0.75em;
 						}
 
-				.row {
-					margin-top: 0;
-					margin-left: -1.5em;
-				}
-
-					.row > * {
-						padding: 0 0 0 1.5em;
-					}
-
-					.row.gtr-uniform {
-						margin-top: -1.5em;
-					}
-
-						.row.gtr-uniform > * {
-							padding-top: 1.5em;
-						}
 
 				.row.gtr-150 {
 					margin-top: 0;
@@ -1264,12 +1175,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			.row {
-				display: flex;
-				flex-wrap: wrap;
-				box-sizing: border-box;
-				align-items: stretch;
-			}
 
 				.row > * {
 					box-sizing: border-box;
@@ -1452,23 +1357,6 @@ input, select, textarea {
 
 						.row.gtr-50.gtr-uniform > * {
 							padding-top: 0.75em;
-						}
-
-				.row {
-					margin-top: 0;
-					margin-left: -1.5em;
-				}
-
-					.row > * {
-						padding: 0 0 0 1.5em;
-					}
-
-					.row.gtr-uniform {
-						margin-top: -1.5em;
-					}
-
-						.row.gtr-uniform > * {
-							padding-top: 1.5em;
 						}
 
 				.row.gtr-150 {
@@ -1699,22 +1587,6 @@ input, select, textarea {
 							padding-top: 0.75em;
 						}
 
-				.row {
-					margin-top: 0;
-					margin-left: -1.5em;
-				}
-
-					.row > * {
-						padding: 0 0 0 1.5em;
-					}
-
-					.row.gtr-uniform {
-						margin-top: -1.5em;
-					}
-
-						.row.gtr-uniform > * {
-							padding-top: 1.5em;
-						}
 
 				.row.gtr-150 {
 					margin-top: 0;
@@ -2564,10 +2436,12 @@ input, select, textarea {
 
 			.features li:nth-child(1) {
 				background-color: rgba(0, 0, 0, 0.035);
+				border-top-left-radius: 3px;
 			}
 
 			.features li:nth-child(2) {
 				background-color: rgba(0, 0, 0, 0.07);
+				border-top-right-radius: 3px;
 			}
 
 			.features li:nth-child(3) {
@@ -2611,13 +2485,7 @@ input, select, textarea {
 				font-size: 1.5em;
 			}
 
-			.features li:nth-child(1) {
-				border-top-left-radius: 3px;
-			}
 
-			.features li:nth-child(2) {
-				border-top-right-radius: 3px;
-			}
 
 			.features li:nth-last-child(1) {
 				border-bottom-right-radius: 3px;
@@ -3411,7 +3279,6 @@ input, select, textarea {
 			position: absolute;
 			right: 0;
 			top: 0;
-			vertical-align: middle;
 			width: 7em;
 		}
 
@@ -3636,12 +3503,11 @@ input, select, textarea {
 			outline: 0;
 		}
 		#banner li {
-			display: inline;
+			display: inline-flex;
 			padding: 0 1em;
 			list-style: none;
 			font-size: 30px;
-			float: left;
-			padding-left: 30%;
+			padding-top: 10px;
 		}
 			#banner h2:before, #banner h2:after {
 				-moz-transition: width 0.85s ease;
@@ -3865,7 +3731,7 @@ input, select, textarea {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -4015,7 +3881,7 @@ input, select, textarea {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -4036,7 +3902,7 @@ input, select, textarea {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -4080,7 +3946,6 @@ input[type=text], select, textarea {
 	display: flex;
 	margin-right: 10px;
 	border-radius: 20px;
-	/*background-color: #f2f2f2;*/
 	padding: 1px;
 	align-items: center;
 	justify-content: center;
@@ -4096,14 +3961,12 @@ input[type=text], select, textarea {
 	justify-content: center
   }
   #status.success{
-	  /*background-color: rgb(211, 250, 153);*/
 	  animation: status 4s ease forwards;
 	  text-align: center;
 	  flex-direction: column;
 	  justify-content: center;
   }
   #status.error{
-	/*background-color: rgb(250, 129, 52);*/
 	animation: status 4s ease forwards;
 	text-align: center;
 	flex-direction: column;

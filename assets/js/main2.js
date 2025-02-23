@@ -13,7 +13,7 @@ var form = document.getElementById("my-form");
       }).then(response => {
         if (response.ok) {
           status.innerHTML = "Thanks for your submission!";
-          //form.reset()
+          form.reset()
         } else {
           response.json().then(data => {
             if (Object.hasOwn(data, 'errors')) {
